@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "AuraTube",
-  "description": "Immerse yourself in YouTube videos with dynamic glow effects. Auto-fixes black bars, spreads light across the page, and runs smooth on GPU.",
+  "name": "AuraTube - Ambient Light for YouTube",
+  "description": "Immerse yourself in YouTube videos with cinematic ambient light. Auto-fixes black bars, spreads light across the page, and runs smooth on GPU.",
   "version": "0.0.0",
   "author": "Harsh Karakoti",
   "homepage_url": "https://harshkarakoti.vercel.app/",

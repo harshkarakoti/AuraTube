@@ -1,7 +1,7 @@
 {
-  "name": "auratube",
+  "name": "auratube-ambientlight",
   "version": "2.38.17",
-  "description": "AuraTube for YouTube",
+  "description": "AuraTube - Ambient Light for YouTube",
   "author": "Harsh Karakoti",
   "homepage": "https://harshkarakoti.vercel.app/",
   "license": "ISC",
