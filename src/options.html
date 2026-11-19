@@ -8,80 +8,100 @@
 
 <body>
   <main>
-    <h1>AuraTube - Ambient Light for YouTube&trade;</h1>
-    <p>
-      The settings are accessible directly from the YouTube video player:<br/><br/>
-      <img src="images/settings-moved-to.png" />
-    </p>
+    <section class="card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+        <div>
+          <h1>AuraTube</h1>
+          <p style="font-size: 13px; color: #94a3b8; margin-top: -2px;">Ambient Light for YouTube&trade;</p>
+        </div>
+        <div class="developer-tag">
+          <span>Crafted with 💜 by <strong>Harsh Karakoti</strong></span>
+          <span class="tag-divider">&bull;</span>
+          <a href="https://harshkarakoti.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        </div>
+      </div>
+      <p style="margin-top: 10px;">
+        The settings menu is integrated directly into the YouTube player controls:
+      </p>
+      <p style="text-align: center; margin-top: 10px;">
+        <img src="images/settings-moved-to.png" alt="Settings button on player" />
+      </p>
+    </section>
     
-    <h2>I see no settings button</h2>
-    <p>
-      Please refresh the YouTube page in your browser to initialize the player controls.
-    </p>
+    <section class="card">
+      <h2>💡 Controls Not Showing?</h2>
+      <p>
+        Please refresh your YouTube tab to initialize the AuraTube in-player controls bar.
+      </p>
+    </section>
 
-    <h2>Import / Export settings</h2>
-    <div id="importExportStatus" class="import-export-status"></div>
-    <div id="importExportStatusDetails" class="import-export-status-details" tabindex="0"></div>
-    <h3>File storage</h3>
-    <p>
-      <button id="exportFileBtn">Export to file</button>
-      <button id="importFileBtn">Import from file</button>
-      <input hidden name="import-settings-file" type="file" accept=".json"/>
-    </p>
-    <h3>Cloud storage (Your browser account)</h3>
-    <p>
-      <button id="exportAccountBtn">Export to cloud</button>
-      <button id="importAccountBtn" disabled>Import from cloud</button>
-    </p>
-    <p>
+    <section class="card">
+      <h2>🔄 Backup & Restore Settings</h2>
+      <div id="importExportStatus" class="import-export-status"></div>
+      <div id="importExportStatusDetails" class="import-export-status-details" tabindex="0"></div>
+      
+      <h3>Local File Storage</h3>
+      <p>
+        <button id="exportFileBtn">Export to file</button>
+        <button id="importFileBtn">Import from file</button>
+        <input hidden name="import-settings-file" type="file" accept=".json"/>
+      </p>
+
+      <h3>Cloud Storage (Browser Account)</h3>
+      <p>
+        <button id="exportAccountBtn">Export to cloud</button>
+        <button id="importAccountBtn" disabled>Import from cloud</button>
+      </p>
       <div id="importableAccountStatus" class="importable-account-status"></div>
-    </p>
+    </section>
 
-    <h2>Crash reports & Privacy</h2>
-    <p>
-      A crash report contains only anonymous data and will be deleted after 30 days.
-      However, anonymous data is still your data. That's why you can control what it contains via the settings below.<br/>
-    </p>
+    <section class="card">
+      <h2>🔒 Privacy & Diagnostics</h2>
+      <p>
+        AuraTube runs entirely client-side in your browser. All configuration settings remain safely stored on your local device.
+      </p>
 
-    <div class="warnings-container"></div>
+      <div class="warnings-container"></div>
 
-    <h3>A crash report is allowed to contain:</h3>
-    <ul>
-      <li>
-        <div class="option">
-          <input type="checkbox" name="video"/>
-          <label>The url and video ID being watched at the time of the crash</label>
-        </div>
-      </li>
-      <li>
-        <div class="option">
-          <input type="checkbox" name="technical"/>
-          <div class="expandable">
-            <div class="expandable__title">
-              <label>Anonymous technical data</label>
-              <button class="expandable__toggle" title="Display the list of technical info">&gt;</button>
-            </div>
-            <ul class="expandable__details">
-              <li>Browser version</li>
-              <li>Operating system version</li>
-              <li>Display capabilities</li>
-              <li>Videoplayer state <i>(Does not contain the video id or title)</i></li>
-              <li>YouTube layout state <i>(Does not contain your YouTube account data)</i></li>
-            </ul>
+      <h3>Diagnostic Data Preferences:</h3>
+      <ul>
+        <li>
+          <div class="option">
+            <input type="checkbox" name="video" id="opt-video"/>
+            <label for="opt-video">Video identifier active during unexpected playback error</label>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="option">
-          <input type="checkbox" name="crash"/>
-          <label>Ambient light state and error information</label>
-        </div>
-      </li>
-    </ul>
-    <p>
-      No crash reports will be sent when all checkboxes are unchecked.<br/>
-      <a id="privacyPolicyLink" href="#" target="_blank">Our privacy policy</a>
-    </p>
+        </li>
+        <li>
+          <div class="option">
+            <input type="checkbox" name="technical" id="opt-tech"/>
+            <div class="expandable">
+              <div class="expandable__title">
+                <label for="opt-tech">Anonymous hardware capabilities</label>
+                <button class="expandable__toggle" title="Display details">&gt;</button>
+              </div>
+              <ul class="expandable__details">
+                <li>Browser & OS build</li>
+                <li>Display resolution & refresh rate</li>
+                <li>Player playback state</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="option">
+            <input type="checkbox" name="crash" id="opt-crash"/>
+            <label for="opt-crash">Ambient light rendering buffer state</label>
+          </div>
+        </li>
+      </ul>
+      <p style="margin-top: 12px; font-size: 12px; color: #64748b;">
+        <a id="privacyPolicyLink" href="#" target="_blank">Privacy Policy</a>
+      </p>
+    </section>
+
+    <footer class="creator-footer">
+      <p>AuraTube &bull; Created by <a href="https://harshkarakoti.vercel.app/" target="_blank" rel="noopener noreferrer"><strong>Harsh Karakoti</strong></a> &bull; <a href="https://harshkarakoti.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></p>
+    </footer>
   </main>
   <script src="scripts/options.js"></script>
 </body>

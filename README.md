@@ -13,23 +13,44 @@ AuraTube transforms your YouTube™ viewing experience with immersive, real-time
 - **🌱 Battery Saver Mode:** Intelligently dials back rendering on podcasts and static video tracks.
 - **🔒 Privacy First:** 100% client-side. No trackers, no external analytics, no user data collection.
 
-## 🚀 Installation (Developer / Unpacked Mode)
+## 🚀 Quick Installation (For Users)
 
-1. Clone or download this repository.
-2. Open your Chromium browser (Chrome, Brave, Edge, Opera) and navigate to `chrome://extensions`.
-3. Enable **Developer mode** in the top-right corner.
-4. Click **Load unpacked** and select the `dist/` directory inside this project.
-5. Open any [YouTube](https://www.youtube.com) video and enjoy the immersive ambient light!
+No technical setup required. Works on **Google Chrome, Brave, Microsoft Edge, Opera, and Vivaldi**.
 
-## 🛠️ Building from Source
+1. **Download:** Get the latest [`auratube-extension.zip`](https://github.com/harshkarakoti/AuraTube/releases) (or extract the pre-built `auratube-extension.zip`).
+2. **Extract:** Unzip the downloaded file into a folder on your computer.
+3. **Open Extensions:** In your browser address bar, enter:
+   - **Chrome / Brave:** `chrome://extensions`
+   - **Edge:** `edge://extensions`
+   - **Opera:** `opera://extensions`
+4. **Enable Developer Mode:** Turn **ON** the **Developer mode** toggle switch in the top-right corner.
+5. **Load AuraTube:** Click **Load unpacked** (top-left) and select the extracted folder.
+6. **Enjoy:** Open any video on [YouTube](https://www.youtube.com) and experience ambient lighting!
+
+---
+
+## 🛠️ Building from Source (For Developers)
 
 ```bash
+# Clone the repository
+git clone https://github.com/harshkarakoti/AuraTube.git
+cd AuraTube
+
 # Install dependencies
 npm install
 
-# Build for distribution
+# Build the extension into dist/
 npm run build
+
+# Package into auratube-extension.zip
+npm run build:zip
+# OR build & package in one command:
+npm run package
 ```
+
+To load your build:
+1. Open `chrome://extensions` with **Developer mode** enabled.
+2. Click **Load unpacked** and select the `dist/` directory.
 
 ## 📜 License
 

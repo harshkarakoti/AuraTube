@@ -2,7 +2,8 @@
   "name": "auratube-ambientlight",
   "version": "2.38.17",
   "description": "AuraTube - Ambient Light for YouTube™",
-  "author": "AuraTube",
+  "author": "Harsh Karakoti",
+  "homepage": "https://harshkarakoti.vercel.app/",
   "license": "ISC",
   "type": "module",
   "scripts": {
@@ -19,6 +20,8 @@
     "build:scripts:sourcemaps": "run-s build:scripts:sourcemaps:inject build:scripts:sourcemaps:copy",
     "build:scripts": "run-s build:scripts:rollup build:scripts:sourcemaps",
     "build": "run-s build:scripts build:styles build:manifest build:html build:images",
+    "build:zip": "node package-zip.js",
+    "package": "run-s build build:zip",
     "upload-sourcemaps": "dotenvx run -f .env -f .env.local --overload -- sentry-cli sourcemaps upload ./sourcemaps --release=2.38.17"
   },
   "engines": {

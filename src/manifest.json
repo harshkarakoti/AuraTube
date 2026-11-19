@@ -3,7 +3,8 @@
   "name": "AuraTube - Ambient Light for YouTube™",
   "description": "Immerse yourself in YouTube™ videos with cinematic ambient light. Auto-fixes black bars, spreads light across the page, and runs smooth on GPU.",
   "version": "0.0.0",
-  "author": "AuraTube",
+  "author": "Harsh Karakoti",
+  "homepage_url": "https://harshkarakoti.vercel.app/",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
@@ -77,8 +78,7 @@
         "scripts/injected.js",
         "images/noise-1.png",
         "images/noise-2.png",
-        "images/noise-3.png",
-        "images/donate.svg"
+        "images/noise-3.png"
       ],
       "matches": [
         "https://*.youtube.com/*",
