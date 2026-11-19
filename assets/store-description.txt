@@ -1,4 +1,4 @@
-AuraTube - Ambient Light for YouTube™
+AuraTube for YouTube
 
 Transform your YouTube watching experience with dynamic, real-time ambient lighting effects that glow beyond the edges of the video player. No extra hardware required—everything runs smoothly in your browser using hardware acceleration!
 

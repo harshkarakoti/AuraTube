@@ -1,8 +1,6 @@
-# AuraTube - Ambient Light for YouTube™
+# AuraTube
 
-AuraTube transforms your YouTube™ viewing experience with immersive, real-time ambient lighting effects that glow beyond the edges of the video player.
-
-![AuraTube Banner](assets/heading.png)
+AuraTube transforms your YouTube viewing experience with immersive, real-time lighting effects that glow beyond the edges of the video player.
 
 ## ✨ Features
 

@@ -1,6 +1,6 @@
 # How to Install AuraTube
 
-AuraTube is an open-source, client-side ambient lighting extension for YouTube™.
+AuraTube is an open-source, client-side lighting extension for YouTube.
 
 ---
 
