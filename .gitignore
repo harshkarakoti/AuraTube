@@ -3,4 +3,11 @@
 /releases
 /sourcecodes
 /sourcemaps
+.env
 .env.local
+.vscode/
+*.mp4
+*.psd
+auratube-extension.zip
+assets/heading.png
+assets/screenshots/*.png
